@@ -459,47 +459,46 @@
     .column.q-offset-12-wide {
       margin-left: 100%; } }
 
-.columns {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-  margin-top: -0.75rem; }
-  .columns:last-child {
-    margin-bottom: -0.75rem; }
-  .columns:not(:last-child) {
-    margin-bottom: 0.75rem; }
-  .columns.q-centered {
-    justify-content: center; }
-  .columns.q-gapless {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0; }
-    .columns.q-gapless:last-child {
-      margin-bottom: 0; }
-    .columns.q-gapless:not(:last-child) {
-      margin-bottom: 1.5rem; }
-    .columns.q-gapless > .column {
-      margin: 0;
-      padding: 0; }
-  @media screen and (min-width: 769px) {
-    .columns.q-grid {
-      flex-wrap: wrap; }
-      .columns.q-grid > .column {
-        max-width: 33.3333%;
-        padding: 0.75rem;
-        width: 33.3333%; }
-        .columns.q-grid > .column + .column {
-          margin-left: 0; } }
-  .columns.q-mobile {
-    display: flex; }
-  .columns.q-multiline {
+.columns.q-centered {
+  justify-content: center; }
+
+.columns.q-gapless {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0; }
+  .columns.q-gapless:last-child {
+    margin-bottom: 0; }
+  .columns.q-gapless:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .columns.q-gapless > .column {
+    margin: 0;
+    padding: 0; }
+
+@media screen and (min-width: 769px) {
+  .columns.q-grid {
     flex-wrap: wrap; }
-  .columns.q-vcentered {
-    align-items: center; }
-  @media screen and (min-width: 769px) {
-    .columns:not(.q-desktop) {
-      display: flex; } }
-  @media screen and (min-width: 1000px) {
-    .columns.q-desktop {
-      display: flex; } }
+    .columns.q-grid > .column {
+      max-width: 33.3333%;
+      padding: 0.75rem;
+      width: 33.3333%; }
+      .columns.q-grid > .column + .column {
+        margin-left: 0; } }
+
+.columns.q-mobile {
+  display: flex; }
+
+.columns.q-multiline {
+  flex-wrap: wrap; }
+
+.columns.q-vcentered {
+  align-items: center; }
+
+@media screen and (min-width: 769px) {
+  .columns:not(.q-desktop) {
+    display: flex; } }
+
+@media screen and (min-width: 1000px) {
+  .columns.q-desktop {
+    display: flex; } }
 
 /*# sourceMappingURL=quotrez.css.map */
