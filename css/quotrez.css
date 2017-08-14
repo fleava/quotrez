@@ -1,7 +1,8 @@
 .q-container {
   width: 100%;
-  max-width: 1366px;
-  padding: 0 3rem; }
+  max-width: 1280px;
+  padding: 0 5rem;
+  margin: 0 auto; }
 
 .column {
   display: block;
