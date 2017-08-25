@@ -1,2 +1,9 @@
-.idea
+# dependencies
+node_modules/
+
+# IDEs and editors
+.idea/
+
+# misc
+*.log
 .DS_Store

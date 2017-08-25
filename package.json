@@ -1,8 +1,8 @@
 {
   "name": "quotrez",
   "version": "0.0.8",
-  "description": "grid system",
-  "main": "index.js",
+  "description": "Quotrez Visual Framework - Quotrez is an advanced Visual Framework. We focus on designing innovations in frontend visuals, and transform emerging ideas into viable products that move the digital industry forward.",
+  "main": "dist/quotrez.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,35 @@
     "type": "git",
     "url": "git+https://github.com/fleava/quotrez.git"
   },
+  "homepage": "https://github.com/fleava/quotrez#readme",
+  "keywords": [
+    "qoutrez",
+    "sass",
+    "scss",
+    "library",
+    "framework",
+    "responsive",
+    "micro",
+    "open source",
+    "lightweight",
+    "frontend"
+  ],
   "author": "fleava",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fleava/quotrez/issues"
   },
-  "homepage": "https://github.com/fleava/quotrez#readme"
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "require-dir": "^0.3.2",
+    "sassdoc": "^2.3.0"
+  }
 }
