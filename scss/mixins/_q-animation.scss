@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
+/// Mixin for animation.
+///
+/// @example animation mixin scss
+///   .element {
+///     @include animation($name,$time,$mode);
+///   }
+///
+///   // CSS Output
+///   .element {
+///     -webkit-animation: $name $time $mode;
+///     -moz-animation: $name $time $mode;
+///     -o-animation: $name $time $mode;
+///     animation: $name $time $mode;
+///   }
+///
+/// Mixin for animation delay.
+///
+/// @example animation delay mixin scss
+///   .element {
+///     @include animation-delay($time);
+///   }
+///
+///   // CSS Output
+///   .element {
+///     -webkit-animation-delay: $time;
+///     -moz-animation-delay: $time;
+///     -o-animation-delay: $time;
+///     animation-delay: $time;
+///   }
+
 @mixin animation($name,$time,$mode) {
   -webkit-animation: $name $time $mode;
   -moz-animation: $name $time $mode;

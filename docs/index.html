@@ -1,5 +1,173 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Quotrez - v0.0.8</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Quotrez - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Quotrez Visual Framework - Quotrez is an advanced Visual Framework. We focus on designing innovations in frontend visuals, and transform emerging ideas into viable products that move the digital industry forward.</p>
-"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/fleava/quotrez#readme">Quotrez - v0.0.8</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-face" data-type="mixin"><a href="#undefined-mixin-font-face">font-face</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-font-face"><h3 class="item__heading"><a class="item__name" href="#mixin-font-face">font-face</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin font-face($font-family, $file-path, $asset-pipeline: false, $file-formats: (&quot;ttf&quot;, &quot;woff2&quot;, &quot;woff&quot;)) { 
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title"><a href="https://github.com/fleava/quotrez#readme">Quotrez - v0.0.8</a></h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="_fetch-bourbon-setting" data-type="function"><a href="#undefined-function-_fetch-bourbon-setting">_fetch-bourbon-setting</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="_font-source-declaration" data-type="function"><a href="#undefined-function-_font-source-declaration">_font-source-declaration</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="_unpack-shorthand" data-type="function"><a href="#undefined-function-_unpack-shorthand">_unpack-shorthand</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="shade" data-type="function"><a href="#undefined-function-shade">shade</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="_is-color" data-type="function"><a href="#undefined-function-_is-color">_is-color</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="animation" data-type="mixin"><a href="#undefined-mixin-animation">animation</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="box-sizing" data-type="mixin"><a href="#undefined-mixin-box-sizing">box-sizing</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="clearfix" data-type="mixin"><a href="#undefined-mixin-clearfix">clearfix</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="ellipsis" data-type="mixin"><a href="#undefined-mixin-ellipsis">ellipsis</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flex-init" data-type="mixin"><a href="#undefined-mixin-flex-init">flex-init</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flex-direction" data-type="mixin"><a href="#undefined-mixin-flex-direction">flex-direction</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-face" data-type="mixin"><a href="#undefined-mixin-font-face">font-face</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="hide-text" data-type="mixin"><a href="#undefined-mixin-hide-text">hide-text</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="position" data-type="mixin"><a href="#undefined-mixin-position">position</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="prefixer" data-type="mixin"><a href="#undefined-mixin-prefixer">prefixer</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="word-wrap" data-type="mixin"><a href="#undefined-mixin-word-wrap">word-wrap</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">csss</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="/// @example css - CSS Output
+///   .wrapper" data-type="css"><a href="#undefined-css-/// @example css - CSS Output
+///   .wrapper">/// @example css - CSS Output /// .wrapper</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-helvetica" data-type="variable"><a href="#undefined-variable-font-helvetica">font-helvetica</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-open-sans" data-type="variable"><a href="#undefined-variable-font-open-sans">font-open-sans</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-montserrat" data-type="variable"><a href="#undefined-variable-font-montserrat">font-montserrat</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-lato" data-type="variable"><a href="#undefined-variable-font-lato">font-lato</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-raleway" data-type="variable"><a href="#undefined-variable-font-raleway">font-raleway</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-roboto" data-type="variable"><a href="#undefined-variable-font-roboto">font-roboto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-oswald" data-type="variable"><a href="#undefined-variable-font-oswald">font-oswald</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="ease-in-quad" data-type="variable"><a href="#undefined-variable-ease-in-quad">ease-in-quad</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="undefined-function-_fetch-bourbon-setting"><h3 class="item__heading"><span class="item__access">[private]</span> <a class="item__name" href="#function-_fetch-bourbon-setting">_fetch-bourbon-setting</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function _fetch-bourbon-setting($setting) { 
+  @return map-get(map-merge($_bourbon-defaults, $bourbon), $setting);
+ }" data-collapsed="@function _fetch-bourbon-setting($setting) { ... }"><code>@function _fetch-bourbon-setting($setting) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Return a Bourbon setting.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$setting</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Boolean</code> or <code>Color</code> or <code>List</code> or <code>Number</code> or <code>String</code></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>_fetch-bourbon-setting(rails-asset-pipeline)</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-font-face"><code>font-face</code></a></li></ul></section><section class="main__item container item" id="undefined-function-_font-source-declaration"><h3 class="item__heading"><span class="item__access">[private]</span> <a class="item__name" href="#function-_font-source-declaration">_font-source-declaration</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function _font-source-declaration($font-family, $file-path, $asset-pipeline, $file-formats) { 
+  $src: ();
+
+  $formats-map: (
+          eot: &quot;#{$file-path}.eot?#iefix&quot; format(&quot;embedded-opentype&quot;),
+          woff2: &quot;#{$file-path}.woff2&quot; format(&quot;woff2&quot;),
+          woff: &quot;#{$file-path}.woff&quot; format(&quot;woff&quot;),
+          ttf: &quot;#{$file-path}.ttf&quot; format(&quot;truetype&quot;),
+          svg: &quot;#{$file-path}.svg##{$font-family}&quot; format(&quot;svg&quot;),
+  );
+
+  @each $key, $values in $formats-map {
+    @if _contains($file-formats, $key) {
+      $file-path: nth($values, 1);
+      $font-format: nth($values, 2);
+
+      @if $asset-pipeline == true {
+        $src: append($src, font-url($file-path) $font-format, comma);
+      } @else {
+        $src: append($src, url($file-path) $font-format, comma);
+      }
+    }
+  }
+
+  @return $src;
+ }" data-collapsed="@function _font-source-declaration($font-family, $file-path, $asset-pipeline, $file-formats) { ... }"><code>@function _font-source-declaration($font-family, $file-path, $asset-pipeline, $file-formats) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Builds the <code>src</code> list for an <code>@font-face</code> declaration.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$font-family</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$file-path</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$asset-pipeline</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>Boolean</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$file-formats</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>List</code></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-font-face"><code>font-face</code></a></li></ul><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://goo.gl/Ru1bKP">https://goo.gl/Ru1bKP</a></li></ul></section><section class="main__item container item" id="undefined-function-_unpack-shorthand"><h3 class="item__heading"><span class="item__access">[private]</span> <a class="item__name" href="#function-_unpack-shorthand">_unpack-shorthand</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function _unpack-shorthand($shorthand) { 
+  @if length($shorthand) == 1 {
+    @return nth($shorthand, 1) nth($shorthand, 1) nth($shorthand, 1) nth($shorthand, 1);
+  } @else if length($shorthand) == 2 {
+    @return nth($shorthand, 1) nth($shorthand, 2) nth($shorthand, 1) nth($shorthand, 2);
+  } @else if length($shorthand) == 3 {
+    @return nth($shorthand, 1) nth($shorthand, 2) nth($shorthand, 3) nth($shorthand, 2);
+  } @else {
+    @return $shorthand;
+  }
+ }" data-collapsed="@function _unpack-shorthand($shorthand) { ... }"><code>@function _unpack-shorthand($shorthand) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Transforms shorthand that can range from 1-to-4 values to be 4 values.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$shorthand</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  margin: _unpack-shorthand(1em 2em);
+}
+
+// CSS Output
+.element {
+  margin: 1em 2em 1em 2em;
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-position"><code>position</code></a></li></ul></section><section class="main__item container item" id="undefined-function-shade"><h3 class="item__heading"><a class="item__name" href="#function-shade">shade</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function shade($color, $percent) { 
+  @if not _is-color($color) {
+    @error &quot;`#{$color}` is not a valid color for the `$color` argument in &quot; +
+           &quot;the `shade` mixin.&quot;;
+  } @else {
+    @return mix(#000, $color, $percent);
+  }
+ }" data-collapsed="@function shade($color, $percent) { ... }"><code>@function shade($color, $percent) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixes a color with black.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$percent</code></th><td data-label="desc"><p>The amount of black to be mixed in.</p></td><td data-label="type"><code>Number (percentage)</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  background-color: shade(#ffbb52, 60%);
+}
+
+// CSS Output
+.element {
+  background-color: #664a20;
+}</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p><code>#{$color}</code> is not a valid color for the <code>$color</code> argument in</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-_is-color"><code>_is-color</code></a></li></ul></section><section class="main__item container item" id="undefined-function-_is-color"><h3 class="item__heading"><span class="item__access">[private]</span> <a class="item__name" href="#function-_is-color">_is-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function _is-color($color) { 
+  @return (type-of($color) == color) or ($color == &quot;currentColor&quot;);
+ }" data-collapsed="@function _is-color($color) { ... }"><code>@function _is-color($color) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Checks for a valid CSS color.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Boolean</code></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#undefined-function-shade"><code>shade</code></a></li></ul></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-animation"><h3 class="item__heading"><a class="item__name" href="#mixin-animation">animation</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin animation() { 
+  -webkit-animation: $name $time $mode;
+  -moz-animation: $name $time $mode;
+  -o-animation: $name $time $mode;
+  animation: $name $time $mode;
+ }" data-collapsed="@mixin animation() { ... }"><code>@mixin animation() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin for animation.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>mixin scss</p></div><pre class="example__code language-animation"><code>  .element {
+    @include animation($name,$time,$mode);
+  }
+
+  // CSS Output
+  .element {
+    -webkit-animation: $name $time $mode;
+    -moz-animation: $name $time $mode;
+    -o-animation: $name $time $mode;
+    animation: $name $time $mode;
+  }
+
+Mixin for animation delay.</code></pre></div><div class="item__example example"><div class="example__description"><p>delay mixin scss</p></div><pre class="example__code language-animation"><code>.element {
+  @include animation-delay($time);
+}
+
+// CSS Output
+.element {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  animation-delay: $time;
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-box-sizing"><h3 class="item__heading"><a class="item__name" href="#mixin-box-sizing">box-sizing</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin box-sizing() { 
+  @include prefixer(box-sizing, border-box, (&quot;webkit&quot;, &quot;moz&quot;));
+ }" data-collapsed="@mixin box-sizing() { ... }"><code>@mixin box-sizing() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin for box-sizing.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include box-sizing;
+}
+
+// CSS Output
+.element {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-prefixer"><code>prefixer</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-clearfix"><h3 class="item__heading"><a class="item__name" href="#mixin-clearfix">clearfix</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin clearfix() { 
+  &amp;::after {
+    clear: both;
+    content: &quot;&quot;;
+    display: block;
+  }
+ }" data-collapsed="@mixin clearfix() { ... }"><code>@mixin clearfix() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides an easy way to include a clearfix for containing floats.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include clearfix;
+}
+
+// CSS Output
+.element::after {
+  clear: both;
+  content: &quot;&quot;;
+  display: block;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://goo.gl/yP5hiZ">https://goo.gl/yP5hiZ</a></li></ul></section><section class="main__item container item" id="undefined-mixin-ellipsis"><h3 class="item__heading"><a class="item__name" href="#mixin-ellipsis">ellipsis</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin ellipsis($width: 100%, $display: inline-block) { 
+  display: $display;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+ }" data-collapsed="@mixin ellipsis($width: 100%, $display: inline-block) { ... }"><code>@mixin ellipsis($width: 100%, $display: inline-block) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Truncates text and adds an ellipsis to represent overflow.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$width</code></th><td data-label="desc"><p>The <code>max-width</code> for the string to respect before being truncated.</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>100%</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$display</code></th><td data-label="desc"><p>Sets the display-value of the element.</p></td><td data-label="type"><code>String</code></td><td data-label="default"><code>inline-block</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include ellipsis;
+}
+
+// CSS Output
+.element {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-flex-init"><h3 class="item__heading"><a class="item__name" href="#mixin-flex-init">flex-init</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex-init() { 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+ }" data-collapsed="@mixin flex-init() { ... }"><code>@mixin flex-init() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin for flex init.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>mixin scss</p></div><pre class="example__code language-animation"><code>.element {
+  @include flex-init;
+}
+
+// CSS Output
+.element {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-flex-direction"><h3 class="item__heading"><a class="item__name" href="#mixin-flex-direction">flex-direction</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex-direction() { 
+  -webkit-box-flex-direction: $direction;
+  -moz-box-flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+ }" data-collapsed="@mixin flex-direction() { ... }"><code>@mixin flex-direction() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin for flex init.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>mixin scss</p></div><pre class="example__code language-animation"><code>.element {
+  @include flex-direction($direction);
+}
+
+// CSS Output
+.element {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-font-face"><h3 class="item__heading"><a class="item__name" href="#mixin-font-face">font-face</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin font-face($font-family, $file-path, $asset-pipeline: false, $file-formats: (&quot;ttf&quot;, &quot;woff2&quot;, &quot;woff&quot;)) { 
   @font-face {
     font-family: $font-family;
     src: _font-source-declaration(
@@ -26,4 +194,138 @@
        url(&quot;fonts/source-sans-pro-regular.woff&quot;) format(&quot;woff&quot;);
   font-style: normal;
   font-weight: 400;
-}</code></pre></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <a class="project-info__name" href="https://github.com/fleava/quotrez#readme">Quotrez</a><!-- Version --> <span class="project-info__version">- v0.0.8</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-_font-source-declaration"><code>_font-source-declaration</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-_fetch-bourbon-setting"><code>_fetch-bourbon-setting</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-hide-text"><h3 class="item__heading"><a class="item__name" href="#mixin-hide-text">hide-text</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin hide-text() { 
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+ }" data-collapsed="@mixin hide-text() { ... }"><code>@mixin hide-text() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Hides the text in an element, commonly used to show an image instead. Some elements will need block-level styles applied.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include hide-text;
+}
+
+// CSS Output
+.element {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://goo.gl/EvLRIu">https://goo.gl/EvLRIu</a></li></ul></section><section class="main__item container item" id="undefined-mixin-position"><h3 class="item__heading"><a class="item__name" href="#mixin-position">position</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin position($position, $box-edge-values) { 
+  $box-edge-values: _unpack-shorthand($box-edge-values);
+  $offsets: (
+          top: nth($box-edge-values, 1),
+          right: nth($box-edge-values, 2),
+          bottom: nth($box-edge-values, 3),
+          left: nth($box-edge-values, 4),
+  );
+
+  position: $position;
+
+  @each $offset, $value in $offsets {
+    @if _is-length($value) {
+      #{$offset}: $value;
+    }
+  }
+ }" data-collapsed="@mixin position($position, $box-edge-values) { ... }"><code>@mixin position($position, $box-edge-values) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides a concise, one-line method for setting an element’s positioning properties: <code>position</code>, <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code>. Use a <code>null</code> value to “skip” an edge of the box.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$position</code></th><td data-label="desc"><p>A CSS position value.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$box-edge-values</code></th><td data-label="desc"><p>List of lengths; accepts CSS shorthand.</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include position(relative, 0 null null 10em);
+}
+
+// CSS Output
+.element {
+  left: 10em;
+  position: relative;
+  top: 0;
+}</code></pre></div><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include position(absolute, 0);
+}
+
+// CSS Output
+.element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#undefined-function-_unpack-shorthand"><code>_unpack-shorthand</code></a></li></ul></section><section class="main__item container item" id="undefined-mixin-prefixer"><h3 class="item__heading"><a class="item__name" href="#mixin-prefixer">prefixer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin prefixer($property, $value, $prefixes) { 
+  @each $prefix in $prefixes {
+    #{&quot;-&quot; + $prefix + &quot;-&quot; + $property}: $value;
+  }
+  #{$property}: $value;
+ }" data-collapsed="@mixin prefixer($property, $value, $prefixes) { ... }"><code>@mixin prefixer($property, $value, $prefixes) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Generates vendor prefixes.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$property</code></th><td data-label="desc"><p>Property to prefix.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc"><p>Value to use.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$prefixes</code></th><td data-label="desc"><p>Vendor prefixes to output.</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  @include prefixer(appearance, none, (&quot;webkit&quot;, &quot;moz&quot;));
+}
+
+// CSS Output
+.element {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-box-sizing"><code>box-sizing</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section><section class="main__item container item" id="undefined-mixin-word-wrap"><h3 class="item__heading"><a class="item__name" href="#mixin-word-wrap">word-wrap</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin word-wrap() { 
+  overflow-wrap: $wrap;
+  word-wrap: $wrap;
+
+  @if $wrap == break-word {
+    word-break: break-all;
+  } @else {
+    word-break: $wrap;
+  }
+ }" data-collapsed="@mixin word-wrap() { ... }"><code>@mixin word-wrap() { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>CSS Output</p></div><pre class="example__code language-css"><code>.wrapper {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-wrap: break-word;
+}</code></pre></div></section></section><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">csss</div></h2><section class="main__item container item" id="undefined-css-/// @example css - CSS Output
+///   .wrapper"><h3 class="item__heading"><a class="item__name" href="#css-/// @example css - CSS Output
+///   .wrapper">/// @example css - CSS Output /// .wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/// @example css - CSS Output
+///   .wrapper {
+  
+}</code>" data-collapsed="/// @example css - CSS Output
+///   .wrapper { ... }"><code>/// @example css - CSS Output
+///   .wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Provides an easy way to change the <code>word-wrap</code> property.</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.wrapper {
+  @include word-wrap(break-word);
+}</code></pre></div></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-font-helvetica"><h3 class="item__heading"><a class="item__name" href="#variable-font-helvetica">font-helvetica</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-helvetica: &quot;Helvetica Neue&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Helvetica font stack.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-stack-helvetica;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Helvetica Neue&quot;, &quot;Helvetica&quot;, &quot;Arial&quot;, sans-serif;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://goo.gl/uSJvZe">https://goo.gl/uSJvZe</a></li></ul></section><section class="main__item container item" id="undefined-variable-font-open-sans"><h3 class="item__heading"><a class="item__name" href="#variable-font-open-sans">font-open-sans</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-open-sans: &quot;Open Sans&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Open Sans font stack.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-open-sans;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Open Sans&quot;, sans-serif;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://fonts.google.com/?query=open&amp;selection.family=Open+Sans">https://fonts.google.com/?query=open&amp;selection.family=Open+Sans</a></li></ul></section><section class="main__item container item" id="undefined-variable-font-montserrat"><h3 class="item__heading"><a class="item__name" href="#variable-font-montserrat">font-montserrat</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-montserrat: &quot;Montserrat&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Montserrat font stack.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-montserrat;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Montserrat&quot;, sans-serif;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://fonts.google.com/?query=mon&amp;selection.family=Montserrat">https://fonts.google.com/?query=mon&amp;selection.family=Montserrat</a></li></ul></section><section class="main__item container item" id="undefined-variable-font-lato"><h3 class="item__heading"><a class="item__name" href="#variable-font-lato">font-lato</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-lato: &quot;Lato&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Helvetica font stack.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-lato;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Lato&quot;, sans-serif;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://fonts.google.com/?query=lato&amp;selection.family=Lato">https://fonts.google.com/?query=lato&amp;selection.family=Lato</a></li></ul></section><section class="main__item container item" id="undefined-variable-font-raleway"><h3 class="item__heading"><a class="item__name" href="#variable-font-raleway">font-raleway</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-raleway: &quot;Raleway&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Raleway font stack.</p><p><a href="https://fonts.google.com/?query=rale&amp;selection.family=Raleway">https://fonts.google.com/?query=rale&amp;selection.family=Raleway</a></p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-raleway;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Raleway&quot;, sans-serif;
+}</code></pre></div></section><section class="main__item container item" id="undefined-variable-font-roboto"><h3 class="item__heading"><a class="item__name" href="#variable-font-roboto">font-roboto</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-roboto: &quot;Roboto&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Roboto font stack.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-roboto;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Roboto&quot;, sans-serif;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://fonts.google.com/?query=rale&amp;selection.family=Roboto">https://fonts.google.com/?query=rale&amp;selection.family=Roboto</a></li></ul></section><section class="main__item container item" id="undefined-variable-font-oswald"><h3 class="item__heading"><a class="item__name" href="#variable-font-oswald">font-oswald</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-oswald: &quot;Oswald&quot;, sans-serif;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>A variable that outputs a Oswald font stack.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.element {
+  font-family: $font-oswald;
+}
+
+// CSS Output
+.element {
+  font-family: &quot;Oswald&quot;, sans-serif;
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://fonts.google.com/?query=oswa&amp;selection.family=Oswald">https://fonts.google.com/?query=oswa&amp;selection.family=Oswald</a></li></ul></section><section class="main__item container item" id="undefined-variable-ease-in-quad"><h3 class="item__heading"><a class="item__name" href="#variable-ease-in-quad">ease-in-quad</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$ease-in-quad: cubic-bezier(0.550, 0.085, 0.680, 0.530);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>CSS cubic-bezier timing functions.</p></div><h3 class="item__sub-heading">Type</h3><p><code>String</code></p><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="https://goo.gl/p8u6SK">https://goo.gl/p8u6SK</a></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <a class="project-info__name" href="https://github.com/fleava/quotrez#readme">Quotrez</a><!-- Version --> <span class="project-info__version">- v0.0.8</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

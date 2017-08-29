@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+/// Mixin for flex init.
+///
+/// @example animation mixin scss
+///   .element {
+///     @include flex-init;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     display: -webkit-box;
+///     display: -moz-box;
+///     display: -ms-flexbox;
+///     display: -webkit-flex;
+///     display: flex;
+///   }
+///
 @mixin flex-init() {
   display: -webkit-box;
   display: -moz-box;
@@ -8,6 +24,22 @@
   display: flex;
 }
 
+/// Mixin for flex init.
+///
+/// @example animation mixin scss
+///   .element {
+///     @include flex-direction($direction);
+///   }
+///
+///   // CSS Output
+///   .element {
+///     display: -webkit-box;
+///     display: -moz-box;
+///     display: -ms-flexbox;
+///     display: -webkit-flex;
+///     display: flex;
+///   }
+///
 @mixin flex-direction($direction) {
   -webkit-box-flex-direction: $direction;
   -moz-box-flex-direction: $direction;

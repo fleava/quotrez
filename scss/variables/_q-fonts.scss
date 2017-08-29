@@ -1,15 +1,125 @@
 @charset "UTF-8";
 
+/// A variable that outputs a Helvetica font stack.
+///
+/// @link https://goo.gl/uSJvZe
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-stack-helvetica;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+///   }
+
 $font-helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-$font-open-sans: 'Open Sans', sans-serif;
+/// A variable that outputs a Open Sans font stack.
+///
+/// @link https://fonts.google.com/?query=open&selection.family=Open+Sans
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-open-sans;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Open Sans", sans-serif;
+///   }
 
-$font-montserrat: 'Montserrat', sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
 
-$font-lato: 'Lato', sans-serif;
+/// A variable that outputs a Montserrat font stack.
+///
+/// @link https://fonts.google.com/?query=mon&selection.family=Montserrat
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-montserrat;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Montserrat", sans-serif;
+///   }
+$font-montserrat: "Montserrat", sans-serif;
 
-$font-raleway: 'Raleway', sans-serif;
+/// A variable that outputs a Helvetica font stack.
+///
+/// @link https://fonts.google.com/?query=lato&selection.family=Lato
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-lato;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Lato", sans-serif;
+///   }
 
-$font-roboto: 'Roboto', sans-serif;
+$font-lato: "Lato", sans-serif;
 
-$font-oswald: 'Oswald', sans-serif;
+/// A variable that outputs a Raleway font stack.
+///
+/// https://fonts.google.com/?query=rale&selection.family=Raleway
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-raleway;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Raleway", sans-serif;
+///   }
+
+$font-raleway: "Raleway", sans-serif;
+
+/// A variable that outputs a Roboto font stack.
+///
+/// @link https://fonts.google.com/?query=rale&selection.family=Roboto
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-roboto;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Roboto", sans-serif;
+///   }
+
+$font-roboto: "Roboto", sans-serif;
+
+/// A variable that outputs a Oswald font stack.
+///
+/// @link https://fonts.google.com/?query=oswa&selection.family=Oswald
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-oswald;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: "Oswald", sans-serif;
+///   }
+$font-oswald: "Oswald", sans-serif;
