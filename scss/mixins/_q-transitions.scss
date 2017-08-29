@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@mixin trans($type) {
+  @include prefixer(transition, $type, ("webkit", "moz", "o", "ms"));
+}
+
+@mixin trans-delay($time) {
+  @include prefixer(transition-delay, $time, ("webkit", "moz", "o", "ms"));
+}
+

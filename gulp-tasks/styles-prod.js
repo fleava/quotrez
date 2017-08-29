@@ -25,7 +25,12 @@ gulp.task('styles-prod', function() {
       .pipe(autoprefixer(autoprefixerOptions))
 
       // output the minified version
-      .pipe(cssnano())
-      .pipe(rename({ extname: '.min.css' }))
+      .pipe(cssnano({
+        discardComments: {removeAll: true}
+      }))
+      .pipe(rename({
+        basename: 'quotrez',
+        extname: '.min.css'
+      }))
       .pipe(gulp.dest(path.output));
 });

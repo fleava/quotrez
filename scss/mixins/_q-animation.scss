@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@mixin animation($name,$time,$mode) {
+  -webkit-animation: $name $time $mode;
+  -moz-animation: $name $time $mode;
+  -o-animation: $name $time $mode;
+  animation: $name $time $mode;
+}
+
+@mixin animation-delay($time) {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  animation-delay: $time;
+}

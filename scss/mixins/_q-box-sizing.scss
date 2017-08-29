@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+@mixin box-sizing() {
+  @include prefixer(box-sizing, border-box, ("webkit", "moz"));
+}

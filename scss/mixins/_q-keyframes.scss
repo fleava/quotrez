@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@mixin keyframes( $content ) {
+  @-webkit-keyframes #{$content} {
+    @content;
+  }
+  @-moz-keyframes #{$content} {
+    @content;
+  }
+  @-o-keyframes #{$content} {
+    @content;
+  }
+  @keyframes #{$content} {
+    @content;
+  }
+}

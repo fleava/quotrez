@@ -1,3 +1,232 @@
+@charset "UTF-8";
+/*
+ Checks for a valid CSS color.
+
+ @argument {string} $color
+
+ @return {boolean}
+
+ @access private
+*/
+/*
+ Return a Bourbon setting.
+
+ @argument {string} $setting
+
+ @return {boolean | color | list | number | string}
+
+ @example scss
+   _fetch-bourbon-setting(rails-asset-pipeline)
+
+ @access private
+*/
+/*
+ Builds the `src` list for an `@font-face` declaration.
+
+ @link https://goo.gl/Ru1bKP
+
+ @argument {string} $font-family
+
+ @argument {string} $file-path
+
+ @argument {boolean} $asset-pipeline
+
+ @argument {list} $file-formats
+
+ @return {list}
+
+ @require {function} _contains
+
+ @access private
+*/
+/*
+ Transforms shorthand that can range from 1-to-4 values to be 4 values.
+
+ @argument {list} $shorthand
+
+ @example scss
+   .element {
+     margin: _unpack-shorthand(1em 2em);
+   }
+
+   // CSS Output
+   .element {
+     margin: 1em 2em 1em 2em;
+   }
+
+ @access private
+*/
+/*
+ CSS cubic-bezier timing functions.
+
+ @link https://goo.gl/p8u6SK
+
+ @type string
+*/
+/*
+ Provides an easy way to include a clearfix for containing floats.
+
+ @link https://goo.gl/yP5hiZ
+
+ @example scss
+   .element {
+     @include clearfix;
+   }
+
+   // CSS Output
+   .element::after {
+     clear: both;
+     content: "";
+     display: block;
+   }
+*/
+/*
+ Mixes a color with black.
+
+ @argument {color} $color
+
+ @argument {number (percentage)} $percent
+   The amount of black to be mixed in.
+
+ @return {color}
+
+ @example scss
+   .element {
+     background-color: shade(#ffbb52, 60%);
+   }
+
+   // CSS Output
+   .element {
+     background-color: #664a20;
+   }
+*/
+/*
+ Truncates text and adds an ellipsis to represent overflow.
+
+ @argument {number} $width [100%]
+   The `max-width` for the string to respect before being truncated.
+
+ @argument {string} $display [inline-block]
+   Sets the display-value of the element.
+
+ @example scss
+   .element {
+     @include ellipsis;
+   }
+
+   // CSS Output
+   .element {
+     display: inline-block;
+     max-width: 100%;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     word-wrap: normal;
+   }
+*/
+/*
+ Hides the text in an element, commonly used to show an image instead. Some
+ elements will need block-level styles applied.
+
+ @link https://goo.gl/EvLRIu
+
+ @example scss
+   .element {
+     @include hide-text;
+   }
+
+   // CSS Output
+   .element {
+     overflow: hidden;
+     text-indent: 101%;
+     white-space: nowrap;
+   }
+*/
+/*
+ Provides a concise, one-line method for setting an element’s positioning
+ properties: `position`, `top`, `right`, `bottom` and `left`. Use a `null`
+ value to “skip” an edge of the box.
+
+ @argument {string} $position
+   A CSS position value.
+
+ @argument {list} $box-edge-values
+   List of lengths; accepts CSS shorthand.
+
+ @example scss
+   .element {
+     @include position(relative, 0 null null 10em);
+   }
+
+   // CSS Output
+   .element {
+     left: 10em;
+     position: relative;
+     top: 0;
+   }
+
+ @example scss
+   .element {
+     @include position(absolute, 0);
+   }
+
+   // CSS Output
+   .element {
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+   }
+
+ @require {function} _is-length
+
+ @require {function} _unpack-shorthand
+*/
+/*
+ Generates vendor prefixes.
+
+ @argument {string} $property
+   Property to prefix.
+
+ @argument {string} $value
+   Value to use.
+
+ @argument {list} $prefixes
+   Vendor prefixes to output.
+
+ @example scss
+   .element {
+     @include prefixer(appearance, none, ("webkit", "moz"));
+   }
+
+   // CSS Output
+   .element {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+   }
+
+ @author Hugo Giraudel
+*/
+/*
+ Provides an easy way to change the `word-wrap` property.
+
+ @param {String} $wrap [break-word]
+   Value for the `word-break` property.
+
+ @example scss - Usage
+   .wrapper {
+     @include word-wrap(break-word);
+   }
+
+ @example css - CSS Output
+   .wrapper {
+     overflow-wrap: break-word;
+     word-break: break-all;
+     word-wrap: break-word;
+   }
+*/
 .q-container {
   width: 100%;
   max-width: 1280px;

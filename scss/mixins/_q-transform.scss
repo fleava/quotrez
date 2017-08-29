@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@mixin transform($content) {
+  -webkit-transform: $content;
+  -moz-transform: $content;
+  -ms-transform: $content;
+  -o-transform: $content;
+  transform: $content;
+}
+
+@mixin transform-zero() {
+  @include transform(translate3D(0, 0, 0));
+}
+
+@mixin transform-important($var) {
+  -webkit-transform: $var !important;
+  -moz-transform: $var !important;
+  -ms-transform: $var !important;
+  -o-transform: $var !important;
+  transform: $var !important;
+}
+
+@mixin transform-origin($var,$var2) {
+  -webkit-transform-origin: $var $var2;
+  -moz-transform-origin: $var $var2;
+  -ms-transform-origin: $var $var2;
+  -o-transform-origin: $var $var2;
+  transform-origin: $var $var2;
+}
+
+@mixin transform-rotate($deg) {
+  -webkit-transform: rotate($deg+deg);
+  -moz-transform: rotate($deg+deg);
+  -ms-transform: rotate($deg+deg);
+  -o-transform: rotate($deg+deg);
+  transform: rotate($deg+deg);
+}
+
+@mixin transform-skew($deg) {
+  -webkit-transform: skewY($deg+deg);
+  -moz-transform: skewY($deg+deg);
+  -ms-transform: skewY($deg+deg);
+  -o-transform: skewY($deg+deg);
+  transform: skewY($deg+deg);
+}
