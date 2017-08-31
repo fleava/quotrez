@@ -1,6 +1,6 @@
 {
   "name": "quotrez",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Quotrez Visual Framework - Quotrez is an advanced Visual Framework. We focus on designing innovations in frontend visuals, and transform emerging ideas into viable products that move the digital industry forward.",
   "main": "dist/",
   "scripts": {
