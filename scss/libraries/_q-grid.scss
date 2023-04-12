@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use "sass:math";
+
 @import "../mixins/q-media-queries";
 
 .q-container {
@@ -72,11 +74,11 @@
   @for $i from 1 through 12 {
     .columns.q-mobile > &.q-#{$i} {
       flex: none;
-      width: $i / 12 * 100%;
+      width: math.div($i, 12) * 100%;
     }
 
     .columns.q-mobile > &.q-offset-#{$i} {
-      margin-left: $i / 12 * 100%;
+      margin-left: math.div($i, 12) * 100%;
     }
   }
 
@@ -138,11 +140,11 @@
     @for $i from 1 through 12 {
       &.q-#{$i}-mobile {
         flex: none;
-        width: $i / 12 * 100%;
+        width: math.div($i, 12) * 100%;
       }
 
       &.q-offset-#{$i}-mobile {
-        margin-left: $i / 12 * 100%;
+        margin-left: math.div($i, 12) * 100%;
       }
     }
   }
@@ -219,12 +221,12 @@
       &.q-#{$i},
       &.q-#{$i}-tablet {
         flex: none;
-        width: $i / 12 * 100%;
+        width: math.div($i, 12) * 100%;
       }
 
       &.q-offset-#{$i},
       &.q-offset-#{$i}-tablet {
-        margin-left: $i / 12 * 100%;
+        margin-left: math.div($i, 12) * 100%;
       }
     }
   }
@@ -288,11 +290,11 @@
     @for $i from 1 through 12 {
       &.q-#{$i}-desktop {
         flex: none;
-        width: $i / 12 * 100%;
+        width: math.div($i, 12) * 100%;
       }
 
       &.q-offset-#{$i}-desktop {
-        margin-left: $i / 12 * 100%;
+        margin-left: math.div($i, 12) * 100%;
       }
     }
   }
@@ -356,11 +358,11 @@
     @for $i from 1 through 12 {
       &.q-#{$i}-wide {
         flex: none;
-        width: $i / 12 * 100%;
+        width: math.div($i, 12) * 100%;
       }
 
       &.q-offset-#{$i}-wide {
-        margin-left: $i / 12 * 100%;
+        margin-left: math.div($i, 12) * 100%;
       }
     }
   }

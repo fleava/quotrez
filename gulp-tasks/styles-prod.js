@@ -1,8 +1,9 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cssnano = require('gulp-cssnano'),
-    rename = require('gulp-rename');
+import gulp from 'gulp'
+import autoprefixer from 'gulp-autoprefixer'
+import cssnano from 'gulp-cssnano'
+import rename from 'gulp-rename'
+
+const sass = require('gulp-sass')(require('sass'))
 
 // Declare input, output and sourcemaps path
 var path = {
@@ -12,25 +13,24 @@ var path = {
 
 // Declare autoprefixer options
 var autoprefixerOptions = {
-  browsers: ['last 2 versions', '> 5%', 'Firefox ESR'],
   cascade: false
 };
 
 // Gulp Task for Production
-gulp.task('styles-prod', function() {
+gulp.task('styles-prod', function () {
   console.log('Ready and go publish with well documented...');
   return gulp
-      .src(path.input)
-      .pipe(sass({ outputStyle: 'compressed' }))
-      .pipe(autoprefixer(autoprefixerOptions))
+    .src(path.input)
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(autoprefixer(autoprefixerOptions))
 
-      // output the minified version
-      .pipe(cssnano({
-        discardComments: {removeAll: true}
-      }))
-      .pipe(rename({
-        basename: 'quotrez',
-        extname: '.min.css'
-      }))
-      .pipe(gulp.dest(path.output));
+    // output the minified version
+    .pipe(cssnano({
+      discardComments: { removeAll: true }
+    }))
+    .pipe(rename({
+      basename: 'quotrez',
+      extname: '.min.css'
+    }))
+    .pipe(gulp.dest(path.output));
 });

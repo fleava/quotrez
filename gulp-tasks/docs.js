@@ -1,5 +1,5 @@
-var gulp = require('gulp'),
-    sassdoc = require('sassdoc');
+import gulp from 'gulp'
+import sassdoc from 'sassdoc'
 
 // Declare input, output and sourcemaps path
 var path = {
@@ -14,7 +14,7 @@ var sassdocOptions = {
 // Gulp Task for Create Documentation
 gulp.task('docs', function () {
   return gulp
-      .src(path.input)
-      .pipe(sassdoc(sassdocOptions))
-      .resume();
+    .src(path.input)
+    .pipe(sassdoc(sassdocOptions))
+    .resume();
 });

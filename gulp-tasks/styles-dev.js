@@ -1,7 +1,9 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer');
+import gulp from 'gulp'
+import sourcemaps from 'gulp-sourcemaps'
+import autoprefixer from 'gulp-autoprefixer'
+
+const sass = require('gulp-sass')(require('sass'))
+
 
 // Declare input, output and sourcemaps path
 var path = {
@@ -18,7 +20,6 @@ var sassOptions = {
 
 // Declare autoprefixer options
 var autoprefixerOptions = {
-  browsers: ['last 2 versions', '> 5%', 'Firefox ESR'],
   cascade: false
 };
 
@@ -26,10 +27,10 @@ var autoprefixerOptions = {
 gulp.task('styles-dev', function () {
   console.log('Development already started and lets see the magics...');
   return gulp
-      .src(path.input)
-      .pipe(sourcemaps.init())
-      .pipe(sass(sassOptions).on('error', sass.logError))
-      .pipe(autoprefixer(autoprefixerOptions))
-      .pipe(sourcemaps.write(path.sourcemaps))
-      .pipe(gulp.dest(path.output));
+    .src(path.input)
+    .pipe(sourcemaps.init())
+    .pipe(gulpSass(sassOptions).on('error', sass.logError))
+    .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(sourcemaps.write(path.sourcemaps))
+    .pipe(gulp.dest(path.output));
 });

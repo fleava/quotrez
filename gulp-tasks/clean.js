@@ -1,13 +1,14 @@
-var gulp = require('gulp'),
-    del = require('del');
+import gulp from 'gulp'
+import clean from 'gulp-clean'
 
-// Declare dist path
-var path = {
-  dist: './dist/',
-  docs: './docs'
-};
+var paths = [
+  './dist/',
+  './docs'
+]
 
-// Gulp Task for Cleaning Dist Folder
-gulp.task('clean', function() {
-  return del([path.dist, path.docs]);
-});
+gulp.task('clean', function () {
+  for (path of paths) {
+    return gulp.src(path, { read: false })
+      .pipe(clean())
+  }
+})
